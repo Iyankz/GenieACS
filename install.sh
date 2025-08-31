@@ -1,10 +1,55 @@
 #!/bin/bash
 
+# Color definitions
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+BLUE='\033[0;34m'
+MAGENTA='\033[0;35m'
+CYAN='\033[0;36m'
+BOLD='\033[1m'
+NC='\033[0m' # No Color
 
-echo "----------------------------------------------------"
-echo " START INSTALL GENIEACS "
-echo "----------------------------------------------------"
+# Function to display spinner
+spinner() {
+    local pid=$1
+    local delay=0.1
+    local spinstr='⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏'
+    while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
+        local temp=${spinstr#?}
+        printf "${CYAN} [%c]  ${NC}" "$spinstr"
+        local spinstr=$temp${spinstr%"$temp"}
+        sleep $delay
+        printf "\b\b\b\b\b\b"
+    done
+    printf "    \b\b\b\b"
+}
 
+# Function to run command with progress
+run_command() {
+    local cmd="$1"
+    local msg="$2"
+    printf "${YELLOW}%-50s${NC}" "$msg..."
+    eval "$cmd" > /dev/null 2>&1 &
+    spinner $!
+    if [ $? -eq 0 ]; then
+        echo -e "${GREEN}Done${NC}"
+    else
+        echo -e "${RED}Failed${NC}"
+        exit 1
+    fi
+}
+
+# Print banner
+print_banner() {
+	echo -e "${BLUE}${BOLD}"
+	echo "-------------------------------------------------------------"
+	echo "Start Install GenieACS"
+	echo "============================================================="
+	echo -e "${NC}"
+}
+
+# Check for root access
 # Check for root access
 if [ "$EUID" -ne 0 ]; then
     echo -e "${RED}This script must be run as root${NC}"
