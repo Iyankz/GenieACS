@@ -10,6 +10,9 @@ Ubuntu 224.04
 3. Modifikasi Privilage install.sh
    ##
        chmod +x install.sh
-4. Install GenieACH
+4. Install GenieACS
    ##
        ./install.sh
+5. Akses web GenieACS
+   http://ip-server:3000
+   
