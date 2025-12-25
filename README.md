@@ -4,41 +4,35 @@
 ![Platform](https://img.shields.io/badge/platform-Ubuntu%2022.04-orange)
 ![Version](https://img.shields.io/badge/GenieACS-1.2.13-blue)
 
-Skrip instalasi otomatis untuk **GenieACS 1.2.13**. Dirancang untuk memudahkan deployment sistem TR-069 secara instan, stabil, dan aman di lingkungan Ubuntu 22.04 LTS.
+Skrip instalasi otomatis untuk **GenieACS 1.2.13** pada sistem operasi Ubuntu 22.04 LTS (Jammy Jellyfish). Skrip ini dirancang agar sederhana, cepat, dan bisa langsung digunakan tanpa konfigurasi manual yang rumit.
 
-## ✍️ Penyusun & Kredit
-Skrip ini adalah hasil kolaborasi antara:
+## ✍️ Penyusun & Kolaborasi
+Skrip ini dikembangkan melalui kolaborasi antara:
 * **Iyankz** (Inisiator & Developer)
 * **Gemini** (AI Partner & Technical Assistant)
 
-*Skrip ini dibuat sebagai bagian dari proses pembelajaran Iyankz dalam administrasi sistem Linux, dengan bantuan teknis dari Gemini untuk memastikan kode yang dihasilkan mengikuti praktik terbaik (best practices).*
+> **Kejujuran Intelektual:** Skrip ini disusun sebagai bagian dari proses belajar saya (Iyankz) dalam mendalami administrasi sistem Linux. Pengembangan ini dibantu oleh teknologi AI (Gemini) untuk memastikan kode yang dihasilkan stabil, aman, dan mengikuti standar praktik terbaik.
 
 ---
 
-## 🚀 Instalasi Cepat (One-Liner)
-Salin dan tempel perintah ini di terminal Anda untuk memulai instalasi otomatis:
+## 🚀 Fitur Utama
+* **Otomatis**: Menginstal Node.js (v16), MongoDB (v4.4), dan GenieACS dalam satu perintah.
+* **Siap Pakai**: Konfigurasi otomatis file environment (`.env`) dan pembuatan JWT Secret unik.
+* **Sistematis**: Mengatur GenieACS sebagai layanan sistem (`systemd`) agar otomatis berjalan saat server restart (Auto-boot).
+* **Monitoring**: Pengecekan status layanan secara real-time di akhir proses instalasi.
+
+---
+
+## 📋 Prasyarat
+* Server dengan OS **Ubuntu 22.04 LTS**.
+* Hak akses **Root** atau **Sudo**.
+* Koneksi internet aktif.
+
+---
+
+## 🛠️ Cara Penggunaan (One-Liner)
+
+Silakan jalankan perintah berikut di terminal Anda untuk memulai instalasi otomatis:
 
 ```bash
 sudo curl -sSL [https://raw.githubusercontent.com/USERNAME_ANDA/NAMA_REPO/main/install_acs.sh](https://raw.githubusercontent.com/USERNAME_ANDA/NAMA_REPO/main/install_acs.sh) | sudo bash
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Otomatis Install GennieACS
-Ubuntu 22.04
-
-##
-    sudo curl -Ssl https://raw.githubusercontent.com/Iyankz/GenieACS/refs/heads/main/install-acs.sh | sudo bash
-Akses web GenieACS
-http://ip-server:3000
-   
