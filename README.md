@@ -15,24 +15,8 @@ Skrip ini dikembangkan melalui kolaborasi antara:
 
 ---
 
-## 🚀 Fitur Utama
-* **Otomatis**: Menginstal Node.js (v16), MongoDB (v4.4), dan GenieACS dalam satu perintah.
-* **Siap Pakai**: Konfigurasi otomatis file environment (`.env`) dan pembuatan JWT Secret unik.
-* **Sistematis**: Mengatur GenieACS sebagai layanan sistem (`systemd`) agar otomatis berjalan saat server restart (Auto-boot).
-* **Monitoring**: Pengecekan status layanan secara real-time di akhir proses instalasi.
-
----
-
-## 📋 Prasyarat
-* Server dengan OS **Ubuntu 22.04 LTS**.
-* Hak akses **Root** atau **Sudo**.
-* Koneksi internet aktif.
-
----
-
-## 🛠️ Cara Penggunaan (One-Liner)
-
-Silakan jalankan perintah berikut di terminal Anda untuk memulai instalasi otomatis:
+## 🚀 Instalasi Cepat (One-Liner)
+Salin dan tempel perintah berikut di terminal Anda:
 
 ```bash
-sudo curl -sSL [https://raw.githubusercontent.com/USERNAME_ANDA/NAMA_REPO/main/install_acs.sh](https://raw.githubusercontent.com/USERNAME_ANDA/NAMA_REPO/main/install_acs.sh) | sudo bash
+curl -sSL [https://raw.githubusercontent.com/Iyankz/GenieACS/refs/heads/main/install-acs.sh](https://raw.githubusercontent.com/Iyankz/GenieACS/refs/heads/main/install-acs.sh) | sudo bash
