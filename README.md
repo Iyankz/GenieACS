@@ -19,4 +19,4 @@ Skrip ini dikembangkan melalui kolaborasi antara:
 Salin dan tempel perintah berikut di terminal Anda:
 
 ```bash
-curl -sSL [https://raw.githubusercontent.com/Iyankz/GenieACS/refs/heads/main/install-acs.sh](https://raw.githubusercontent.com/Iyankz/GenieACS/refs/heads/main/install-acs.sh) | sudo bash
+curl -sSL https://raw.githubusercontent.com/Iyankz/GenieACS/refs/heads/main/install-acs.sh | sudo bash
