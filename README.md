@@ -7,8 +7,6 @@
 Skrip instalasi otomatis untuk **GenieACS 1.2.13** pada sistem operasi Ubuntu 22.04 LTS (Jammy Jellyfish). Skrip ini dirancang agar sederhana, cepat, dan aman untuk digunakan.
 
 
-> **Kejujuran Intelektual:** Skrip ini disusun sebagai bagian dari proses belajar saya (Iyankz) dalam mendalami administrasi sistem Linux. Pengembangan ini dibantu oleh teknologi AI (Gemini) untuk memastikan kode yang dihasilkan mengikuti standar praktik terbaik.
-
 ---
 
 ## 🚀 Instalasi Cepat (One-Liner)
