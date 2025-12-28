@@ -25,3 +25,6 @@ curl -sSL https://raw.githubusercontent.com/Iyankz/GenieACS/refs/heads/main/inst
 
 ## ⚖️ Lisensi
 Proyek ini dilisensikan di bawah **MIT License** - lihat file [LICENSE](LICENSE) untuk detailnya.
+
+## ⭐ Dukung Proyek Ini
+Jika repositori ini membantu memudahkan pekerjaan Anda atau bermanfaat bagi tim IT Anda, mohon berikan bintang (Star) ⭐ pada repositori ini sebagai bentuk dukungan bagi kami untuk terus mengembangkan script ini.
