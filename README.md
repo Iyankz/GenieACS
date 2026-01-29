@@ -20,7 +20,6 @@ curl -sSL https://raw.githubusercontent.com/Iyankz/GenieACS/refs/heads/main/inst
 
 ## Dibuat dengan ❤️ oleh [Iyankz](https://Iyankz.github.io)
 
-* **Iyankz** (Inisiator , Developer & Tester)
 
 ## ⚖️ Lisensi
 Proyek ini dilisensikan di bawah **MIT License** - lihat file [LICENSE](LICENSE) untuk detailnya.
